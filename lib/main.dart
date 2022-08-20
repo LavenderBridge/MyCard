@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               CircleAvatar(
                 radius: 100.0,
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
                 "Kunal Khulbe",
                 style: TextStyle(
                   fontFamily: "DynaPuff",
-                  fontSize: 20.0,
+                  fontSize: 40.0,
                   letterSpacing: 1.0,
                   color: Colors.white,
                 ),
@@ -34,9 +36,17 @@ class MyApp extends StatelessWidget {
               Text(
                 "Flutter Developer",
                 style: TextStyle(
-                  fontFamily: "SourceSansPro",
+                  fontFamily: "Source Sans Pro",
                   fontSize: 20.0,
+                  letterSpacing: 3.5,
+                  color: Color.fromARGB(207, 255, 255, 255),
+                  fontWeight: FontWeight.bold,
                 ),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+
               ),
               Container(
                 height: 40.0,
