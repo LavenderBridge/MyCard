@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            // crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               CircleAvatar(
                 radius: 100.0,
@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 "Kunal Khulbe",
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: "DynaPuff",
                   fontSize: 40.0,
@@ -33,8 +34,22 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              // Align(
+              //   alignment: Alignment.center,
+              //   child: Text(
+              //     "Flutter Developer",
+              //     style: TextStyle(
+              //       fontFamily: "Source Sans Pro",
+              //       fontSize: 20.0,
+              //       letterSpacing: 3.5,
+              //       color: Color.fromARGB(207, 255, 255, 255),
+              //       fontWeight: FontWeight.bold,
+              //     ),
+              //   ),
+              // ),
               Text(
                 "Flutter Developer",
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: "Source Sans Pro",
                   fontSize: 20.0,
@@ -45,14 +60,38 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(
                 height: 20.0,
-                width: 150.0,
-
               ),
-              Container(
-                height: 40.0,
-                width: 200.0,
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 500.0),
                 color: Colors.white,
+                child: ListTile(
+                  leading: Icon(Icons.phone_android_rounded),
+                    title: Text(
+                      "+91 9650785400",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: "Source Sans Pro",
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16.0,
+                      ),
+                    ),
+                  )
               ),
+              Card(
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 500.0),
+                  color: Colors.white,
+                  child: ListTile(
+                    title: Text(
+                      "kunal.khulbe2@gmail.com",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: "Source Sans Pro",
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16.0,
+                      ),
+                    ),
+                  )),
             ],
           ),
         ),
@@ -60,3 +99,26 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+// Row(
+//                     children: [
+//                       Icon(
+//                         Icons.email_rounded,
+//                         color: Color.fromARGB(255, 0, 134, 121),
+//                       ),
+//                       SizedBox(
+//                         width: 10.0,
+//                       ),
+//                       Text(
+//                         "kunal.khulbe2@gmail.com",
+//                         textAlign: TextAlign.center,
+//                         style: TextStyle(
+//                           fontFamily: "Source Sans Pro",
+//                           fontWeight: FontWeight.bold,
+//                           fontSize: 16.0,
+//                         ),
+//                       ),
+//                     ],
+//                   ),
