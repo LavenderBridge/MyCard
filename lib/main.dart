@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            // crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               CircleAvatar(
                 radius: 100.0,
-                backgroundImage: AssetImage("assets/images/crow-3.jpg"),
+                backgroundImage: AssetImage("assets/images/me.jpg"),
               ),
               Text(
                 "Kunal Khulbe",
@@ -34,19 +34,6 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              // Align(
-              //   alignment: Alignment.center,
-              //   child: Text(
-              //     "Flutter Developer",
-              //     style: TextStyle(
-              //       fontFamily: "Source Sans Pro",
-              //       fontSize: 20.0,
-              //       letterSpacing: 3.5,
-              //       color: Color.fromARGB(207, 255, 255, 255),
-              //       fontWeight: FontWeight.bold,
-              //     ),
-              //   ),
-              // ),
               Text(
                 "Flutter Developer",
                 textAlign: TextAlign.center,
@@ -60,6 +47,10 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(
                 height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
               ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 500.0),
@@ -68,7 +59,7 @@ class MyApp extends StatelessWidget {
                   leading: Icon(Icons.phone_android_rounded),
                     title: Text(
                       "+91 9650785400",
-                      textAlign: TextAlign.center,
+                      // textAlign: TextAlign.start,
                       style: TextStyle(
                         fontFamily: "Source Sans Pro",
                         fontWeight: FontWeight.bold,
@@ -82,9 +73,10 @@ class MyApp extends StatelessWidget {
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 500.0),
                   color: Colors.white,
                   child: ListTile(
+                    leading: Icon(Icons.email_rounded),
                     title: Text(
                       "kunal.khulbe2@gmail.com",
-                      textAlign: TextAlign.center,
+                      // textAlign: TextAlign.start,
                       style: TextStyle(
                         fontFamily: "Source Sans Pro",
                         fontWeight: FontWeight.bold,
